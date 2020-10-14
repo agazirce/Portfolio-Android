@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">AndroidInit</string>
+    <string name="hello_world" translatable="false">Hello World !</string>
+    <string name="editText" translatable="false">Texte à éditer</string>
+    <string name="weight">Poids</string>
+    <string name="height">Taille</string>
+    <string name="meters">Mètres</string>
+    <string name="function">Mega fonction !</string>
+    <string name="calc">Calculer l\'IMC</string>
+    <string name="reset">RAZ</string>
+    <string name="result_title">Résultat :</string>
+    <string name="result">Vous devez cliquer sur le bouton \"Calculer l\'IMC\" pour obtenir un résultat.</string>
+    <string name="mega_string">Vous faites un poids parfait ! Wahou ! Trop fort ! On dirait Brad Pitt (si vous êtes un homme)/Angelina Jolie (si vous êtes une femme)/Willy (si vous êtes une orque) !</string>
+    <string name="low_height">Hého, tu es un Minipouce ou quoi ?</string>
+    <string name="imc">Votre IMC est %1$f</string>
+    <string name="weight_title">Poids :</string>
+    <string name="height_title">Taille :</string>
+</resources>
