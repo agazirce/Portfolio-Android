@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Natacha Millard</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">Hi, my name is Natacha.
+    \n\nI love playing coop boardgame.
+    \n\nI was treasurer 2 years in a boardgame association, then I created mine with my husband and I was the president the first 3 years.
+    \n\nFun fact is we met us through boardgames.
+    \n\nWe\'re playing video games too, but not same type : I like puzzle games, point&amp;click ; my husband like multiplayers games (Rocket League, GTA, Sea of Thieves)
+    \n\nNow, we have 2 children (2 and 5 years old) and we hope they\'ll love that too!
+    \n\n\"We don\'t stop playing because we grow old; we grow old because we stop playing.\" - George Bernard Shaw</string>
+</resources>
