@@ -20,10 +20,11 @@ package com.example.android.marsrealestate.overview
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.android.marsrealestate.R
 import com.example.android.marsrealestate.databinding.FragmentOverviewBinding
-import com.example.android.marsrealestate.databinding.GridViewItemBinding
 
 /**
  * This fragment shows the the status of the Mars real-estate web services transaction.
@@ -42,7 +43,7 @@ class OverviewFragment : Fragment() {
      * to enable Data Binding to observe LiveData, and sets up the RecyclerView with an adapter.
      */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         val binding = FragmentOverviewBinding.inflate(inflater)
 
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
@@ -51,7 +52,17 @@ class OverviewFragment : Fragment() {
         // Giving the binding access to the OverviewViewModel
         binding.viewModel = viewModel
 
-        binding.photosGrid.adapter = PhotoGridAdapter()
+        binding.photosGrid.adapter = PhotoGridAdapter(PhotoGridAdapter.OnClickListener {
+            viewModel.displayProopertyDetails(it)
+        })
+
+        viewModel.navigateToSelectedProperty.observe(this, Observer {
+            if (it != null) {
+                this.findNavController().navigate(OverviewFragmentDirections.actionShowDetail(it))
+                viewModel.displayProopertyDetailsComplete()
+            }
+        })
+
         setHasOptionsMenu(true)
         return binding.root
     }
