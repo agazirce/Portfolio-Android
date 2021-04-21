@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SrvTpAndroid</string>
+    <string name="display_price">$%,.0f</string>
 </resources>

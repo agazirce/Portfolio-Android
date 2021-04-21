@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="property"
+            type="com.example.srvtpandroid.network.OrderProperty" />
+    </data>
+
+    <TextView
+    android:id="@+id/property_type_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="price"
+    android:textColor="#de000000"
+    android:textSize="39sp" />
+
+</layout>
